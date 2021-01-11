@@ -5,6 +5,7 @@ OBJS   = grades.o
 EXEC  =  libgrades.so
 RM = rm -fr *.o libgrades.so 
 
+# creates and compiles grades library
 libgrades.so: grades.o
 	$(CCLINK) -shared grades.o -o libgrades.so -llinked-list -L.
 
